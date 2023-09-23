@@ -11,14 +11,16 @@ function TwoColumnLayout() {
     // const animatedElement = ".element";
 
     const ctx = gsap.context(() => {
-      const details = gsap.utils.toArray(
+      const details: GSAPStaggerVars[] = gsap.utils.toArray(
         ".desktopContentSection:not(:first-child)"
       );
-      const photos = gsap.utils.toArray(".desktopPhoto:not(:first-child)");
+      const photos: GSAPStaggerVars[] = gsap.utils.toArray(
+        ".desktopPhoto:not(:first-child)"
+      );
 
       gsap.set(photos, { yPercent: 101 });
 
-      const allPhotos = gsap.utils.toArray(".desktopPhoto");
+      const allPhotos: GSAPStaggerVars[] = gsap.utils.toArray(".desktopPhoto");
 
       // create
       let mm = gsap.matchMedia();
