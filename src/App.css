@@ -1,0 +1,16 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+body, html {
+  min-width: 100vw;
+}
+
+.square {
+  background-color: teal;
+  height: 15em;
+  border-radius: 16px;
+  width: 15em;
+}
